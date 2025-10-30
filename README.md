@@ -19,6 +19,7 @@ Whether it’s restarting a service safely, monitoring resource usage, or automa
 ---
 
 ## Repository Structure
+```
 atharv-automation-toolkit/
 │
 ├── system/
@@ -31,7 +32,7 @@ atharv-automation-toolkit/
 │ └── (coming soon)
 │
 └── README.md
-
+```
 
 ---
 
@@ -49,6 +50,9 @@ echo 'export PATH="$PATH:$HOME/atharv-automation-toolkit/system"' >> ~/.bashrc
 source ~/.bashrc
 ```
 Now you can run your scripts globally like:
+```
+reaload-ssh.sh
+```
 ---
 
 ## Contributions
