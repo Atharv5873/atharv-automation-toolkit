@@ -23,7 +23,8 @@ Whether it’s restarting a service safely, monitoring resource usage, or automa
 atharv-automation-toolkit/
 │
 ├── system/
-│ ├── reload_ssh_config.sh # Safely tests and reloads SSH config
+│   ├── reload_ssh_config.sh   # Safely tests and reloads SSH config
+│   └── adminx.sh              # Interactive system admin menu tool
 │
 ├── aliases/
 │ ├── personal_aliases.sh
