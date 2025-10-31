@@ -25,6 +25,9 @@ atharv-automation-toolkit/
 ├── system/
 │ ├── reload_ssh_config.sh # Safely tests and reloads SSH config
 │
+├── aliases/
+│ ├── personal_aliases.sh
+│
 ├── monitoring/
 │ └── (coming soon)
 │
@@ -54,7 +57,16 @@ Now you can run your scripts globally like:
 reaload-ssh.sh
 ```
 ---
+## 🧠 Personal Aliases
 
+This toolkit also includes a set of **custom Bash aliases** I use for faster system administration.
+
+To use them:
+```bash
+source ~/atharv-automation-toolkit/aliases/personal_aliases.sh
+```
+
+---
 ## Contributions
 This project is primarily for personal use, but ideas, improvements, and suggestions are welcome!
 Feel free to open an issue or pull request if you have something valuable to add.
