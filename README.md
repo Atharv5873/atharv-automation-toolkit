@@ -23,17 +23,15 @@ Whether it’s restarting a service safely, monitoring resource usage, or automa
 atharv-automation-toolkit/
 │
 ├── system/
-│   ├── reload_ssh_config.sh   # Safely tests and reloads SSH config
+│   ├── reload-ssh.sh          # Safely tests and reloads SSH config
 │   └── adminx.sh              # Interactive system admin menu tool
 │
 ├── aliases/
-│ ├── personal_aliases.sh
+│   └── personal_aliases.sh    # Custom Bash aliases
 │
-├── monitoring/
-│ └── (coming soon)
-│
-├── maintenance/
-│ └── (coming soon)
+├── powershell/
+│   ├── claude-mem.ps1         # Claude-Mem worker CLI (Windows)
+│   └── README.md              # PowerShell setup guide
 │
 └── README.md
 ```
@@ -42,32 +40,28 @@ atharv-automation-toolkit/
 
 ## Getting Started
 
+### Linux/Bash Scripts
+
 Clone the repository:
 ```bash
 git clone https://github.com/atharv-sharma/atharv-automation-toolkit.git
 cd atharv-automation-toolkit
 ```
 
-If you plan to use these scripts frequently, you can **add the toolkit directory to your system PATH** so you can run the tools from anywhere in your terminal.
+Add toolkit to your PATH:
 ```bash
 echo 'export PATH="$PATH:$HOME/atharv-automation-toolkit/system"' >> ~/.bashrc
 source ~/.bashrc
 ```
-Now you can run your scripts globally like:
-```
-reaload-ssh.sh
-```
----
-## 🧠 Personal Aliases
 
-This toolkit also includes a set of **custom Bash aliases** I use for faster system administration.
-
-To use them:
+Use custom aliases:
 ```bash
 source ~/atharv-automation-toolkit/aliases/personal_aliases.sh
 ```
 
----
+### Windows/PowerShell Scripts
+
+See [powershell/README.md](powershell/README.md) for Claude-Mem setup on Windows.
 ## Contributions
 This project is primarily for personal use, but ideas, improvements, and suggestions are welcome!
 Feel free to open an issue or pull request if you have something valuable to add.
